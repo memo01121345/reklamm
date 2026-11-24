@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LCD Reklam Ekranı – Ekim 2026</title>
+<title>LCD Reklam Ekranı – Kasım 2026</title>
 <style>
 :root{--h:210;--bg:hsl(var(--h) 45% 8%);--ac:hsl(var(--h) 90% 62%);--ac2:hsl(calc(var(--h) + 40) 90% 60%);--tx:#f4f6fb;--mu:hsl(var(--h) 20% 72%)}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -47,7 +47,7 @@ h1{font-size:112px;line-height:1.02;font-weight:800;letter-spacing:-2px;text-wra
   <div id="content"></div>
   <div id="bar">
     <div id="prog"></div>
-    <div id="tag"><i></i>Ekim 2026</div>
+    <div id="tag"><i></i>Kasım 2026</div>
     <div id="clock"></div>
     <div id="tick"><div id="tk"></div></div>
     <div id="cnt"></div>
@@ -56,127 +56,8 @@ h1{font-size:112px;line-height:1.02;font-weight:800;letter-spacing:-2px;text-wra
 
 <script>
 // Biçim: Marka | Slogan | Teklif | Kategori | Renk tonu | Simge
-const DATA=`Türk Hava Yolları|Cumhuriyet Bayramı'nda uçuş fırsatı|Yurt içi indirimli biletler satışta|Havayolu|355|✈️
-Turkcell|Dijital hayat seninle büyüyor|Paketler ve kampanyalar uygulamada|Telekom|48|📱
-Hyundai|Ekim kampanyalarını kaçırma|Kampanyalar 1-31 Ekim 2026 arasında geçerli|Otomotiv|215|🚗
-BİM|Her gün uygun fiyat|Haftanın aktüel ürünleri reyonlarda|Market|2|🛒
-Garanti BBVA|Finansın dijital yüzü|Mobil bankacılıkla her an yanında|Bankacılık|145|💳
-Kia|Ekim fırsatları başladı|Kampanyalar 1-30 Ekim 2026 arasında geçerli|Otomotiv|8|🚙
-Trendyol|Aradığın her şey bir tık uzakta|Kasım indirimleri öncesi fırsatları takip et|E-ticaret|22|🛍️
-Eti|Lezzetli anlar paylaşınca güzel|Bisküvi ve atıştırmalıklar|Atıştırmalık|215|🍪
-Togg|Türkiye'nin yerli otomobili|T10F ve T10X için finansman seçenekleri|Otomotiv|185|⚡
-Getir|Dakikalar içinde kapında|Market ve ihtiyaçlar tek uygulamada|Hızlı Teslimat|265|🛵
-Arçelik|Evin her köşesine teknoloji|Beyaz eşya ve küçük ev aletleri|Ev Aletleri|215|🧊
-Škoda|Ekim fiyat ve kredi fırsatları|Güncel kampanyalar bayilerde|Otomotiv|150|🚘
-Koton|Sonbahar stilini yakala|Yeni sezon koleksiyonu mağazalarda|Moda|350|👗
-Çaykur|Rize'den sofralara|Demli bir sohbetin adı|Çay|130|🍵
-MG|Ekim kampanyası sürüyor|1-31 Ekim arası, stoklarla sınırlı|Otomotiv|5|🏎️
-Yemeksepeti|Karnın acıkınca aklına gelsin|Favori restoranların kapında|Yemek|348|🍔
-Teknosa|Teknolojinin adresi|Telefon, bilgisayar ve akıllı ev ürünleri|Elektronik|200|💻
-Mercedes-Benz|Ekim finansman kampanyası|Seçili modellerde kurumsal 0 faiz, 31 Ekim'e kadar|Otomotiv|205|⭐
-Migros|Taze ve kaliteli alışveriş|Sanal Market ile kapında|Market|28|🥬
-Pegasus|Uçuşun kolay hali|Yurt içi ve yurt dışı uçuşlar|Havayolu|48|🛫
-Yayla Gıda|Zenginleştirilmiş Pirinç|Türkiye'de bir ilk|Gıda|32|🍚
-Türk Telekom|Hayatın her anında bağlantıda|Fiber ve mobil paketler|Telekom|205|📡
-Burger King|Hamburger keyfi|Menüler ve kampanyalar uygulamada|Restoran|15|🍟
-Bellona|Evin yeni hali|Koltuk, yatak odası ve yemek odası|Mobilya|38|🛋️
-LC Waikiki|Herkes için moda|Sonbahar-kış koleksiyonu|Moda|355|🧥
-Pınar|Doğallığın lezzeti|Süt, peynir ve kahvaltılıklar|Süt Ürünleri|208|🥛
-Ziraat Bankası|Türkiye'nin güvenilir bankası|Bireysel ve ticari çözümler|Bankacılık|355|🏦
-Kahve Dünyası|Kahve molası vakti|Türk kahvesi, çikolata, lokum|Kafe|18|☕
-Vestel|Türkiye'de üretilen teknoloji|Televizyon, beyaz eşya, klima|Elektronik|358|📺
-Hepsiburada|Keşfetmenin en kolay yolu|Elektronikten modaya binlerce ürün|E-ticaret|26|📦
-Ülker|Mutluluğun tadı|Çikolata ve bisküviler|Atıştırmalık|225|🍫
-Koçtaş|Evini yenile|Boya, yapı malzemeleri ve bahçe|Yapı Market|30|🔨
-Vodafone|Geleceğe hazır bağlantı|Tarifeler ve cihaz seçenekleri|Telekom|0|📶
-Simit Sarayı|Taze taze her an|Simit, poğaça ve kahvaltı|Fırın|8|🥯
-İş Bankası|Birlikte ilerleyelim|Mobil ve dijital bankacılık|Bankacılık|222|🏛️
-Sütaş|Sofranın taze tadı|Süt ve süt ürünleri|Süt Ürünleri|210|🧀
-Mavi|Kot denince akla gelen|Yeni sezon koleksiyonu|Moda|220|👖
-Petrol Ofisi|Yolda güvenle|Akaryakıt ve yol hizmetleri|Akaryakıt|215|⛽
-A101|Alışverişin yakın adresi|Aktüel ürünler mağazalarda|Market|218|🧺
-Anadolu Sigorta|Her zaman yanındayız|Kasko, konut ve sağlık sigortası|Sigorta|235|🛡️
-Akbank|Bankacılığın kolay hali|Mobil uygulamayla her an yanında|Bankacılık|355|💳
-Şok Marketler|Yakın ve uygun|Haftalık fırsat ürünleri|Market|50|🛒
-Beko|Yaşam için akıllı çözümler|Beyaz eşya ve ev aletleri|Ev Aletleri|205|🫧
-Boyner|Moda ve yaşam bir arada|Yeni sezon markaları|Moda|300|👜
-Domino's Pizza|Sıcak pizza, hızlı teslimat|Menüler ve kampanyalar uygulamada|Restoran|210|🍕
-Opet|Yola devam|Akaryakıt ve mağaza hizmetleri|Akaryakıt|220|⛽
-Danone|Sağlıklı günlere merhaba|Yoğurt ve süt ürünleri|Süt Ürünleri|200|🥣
-Coca-Cola|Mutluluğu paylaş|Gazlı ve gazsız içecekler|İçecek|355|🥤
-Cinemaximum|Beyazperdede hafta sonu|Vizyondaki filmler|Sinema|345|🎬
-Yapı Kredi|Hayatın her anında|Dijital bankacılık çözümleri|Bankacılık|215|🏦
-CarrefourSA|Alışverişin keyfi|Market ve online alışveriş|Market|218|🥖
-MediaMarkt|Elektronik alışverişin adresi|Teknoloji ürünleri mağazalarda|Elektronik|2|🎧
-DeFacto|Her tarza uygun|Yeni sezon koleksiyonu|Moda|240|👕
-İstikbal|Evinin konforu|Mobilya ve yatak çözümleri|Mobilya|350|🛏️
-IKEA Türkiye|Daha iyi bir günlük yaşam|Ev ve mobilya fikirleri|Ev|222|🪑
-Starbucks|Kahve molası|Sezonluk içecekler mağazalarda|Kafe|150|🥤
-Shell|Yol arkadaşın|Akaryakıt ve yağ ürünleri|Akaryakıt|50|🛢️
-Doğuş Çay|Çay keyfi|Demli çay, sıcak sohbet|Çay|120|🫖
-Dimes|Meyve suyunun adresi|Meyve suları ve içecekler|İçecek|25|🍊
-Gratis|Güzellik ve bakım|Kozmetik ve kişisel bakım ürünleri|Kozmetik|330|💄`;
-const slug=t=>t.toLowerCase().replace(/\u0307/g,'').replace(/ç/g,'c').replace(/ğ/g,'g').replace(/ı/g,'i').replace(/ö/g,'o').replace(/ş/g,'s').replace(/š/g,'s').replace(/ü/g,'u').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const ADS=DATA.split('\n').map((l,i)=>{const [b,s,o,c,h,e]=l.split('|');return{b,s,o,c,h:+h,e,video:i%2===0,i}});
-console.table(ADS.map(a=>({marka:a.b,logo:'logos/'+slug(a.b)+'.png',medya:'media/'+slug(a.b)+'.mp4 veya .jpg'})));
-const N=ADS.length, D=7000, $=id=>document.getElementById(id);
-const stage=$('stage'), content=$('content');
-let cur=-1, el=0, paused=false, t0=0, ad=null;
-
-/* Ölçekleme: 1920x1080 sahne her ekrana oturur */
-function fit(){const s=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform=`translate(-50%,-50%) scale(${s})`}
-addEventListener('resize',fit);fit();
-
-/* Logo: marka baş harfinden üretilen SVG */
-function logo(a){const L=a.b.replace(/[^A-Za-zÇĞİÖŞÜçğıöşü0-9]/g,'').charAt(0).toUpperCase();
-return `<svg viewBox="0 0 84 84"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(${a.h} 90% 55%)"/><stop offset="1" stop-color="hsl(${a.h+22} 90% 34%)"/></linearGradient></defs><rect width="84" height="84" rx="22" fill="url(#lg)"/><path d="M0 0H84V30Q42 48 0 26Z" fill="#fff" opacity=".16"/><text x="42" y="60" text-anchor="middle" font-size="50" font-weight="800" fill="#fff" font-family="Bahnschrift,Segoe UI,sans-serif">${L}</text></svg>`}
-
-/* Resimli reklam: SVG sahnesi */
-function scene(a){const h=a.h,h2=h+30,r=n=>((a.i*37+n*53)%100)/100,hs=(l,o)=>`<stop offset="${l}" stop-color="${o}"/>`;
-let s=`<svg viewBox="0 0 960 1080" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="bg" x1=".2" y1="0" x2=".8" y2="1">${hs(0,`hsl(${h} 65% 38%)`)}${hs(.6,`hsl(${h2} 70% 18%)`)}${hs(1,`hsl(${h2} 60% 8%)`)}</linearGradient><radialGradient id="gl"><stop offset="0" stop-color="hsl(${h2} 100% 80%)" stop-opacity=".8"/><stop offset="1" stop-color="hsl(${h2} 100% 70%)" stop-opacity="0"/></radialGradient><linearGradient id="gp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".34"/><stop offset="1" stop-color="#fff" stop-opacity=".04"/></linearGradient><linearGradient id="fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><radialGradient id="vg" cx=".55" cy=".45" r=".8"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></radialGradient><filter id="bl"><feGaussianBlur stdDeviation="14"/></filter><filter id="gr"><feTurbulence baseFrequency=".9" numOctaves="2" seed="${a.i}"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .08 0"/></filter></defs><rect width="960" height="1080" fill="url(#bg)"/><circle cx="560" cy="430" r="440" fill="url(#gl)"/>`;
-for(let k=0;k<16;k++)s+=`<circle cx="${r(k)*960}" cy="${r(k+9)*1080}" r="${20+r(k+2)*55}" fill="hsl(${h+k*8} 90% 72%)" opacity=".32" filter="url(#bl)"/>`;
-s+=`<rect y="810" width="960" height="270" fill="url(#fl)"/><rect x="250" y="170" width="620" height="640" rx="76" fill="url(#gp)" stroke="rgba(255,255,255,.4)" stroke-width="2"/><path d="M300 200Q560 170 820 200" stroke="#fff" stroke-opacity=".5" stroke-width="3" fill="none"/>`;
-s+=`<text x="560" y="590" text-anchor="middle" font-size="340" transform="translate(0 1440) scale(1 -1)" opacity=".12" style="transform-origin:0 0">${a.e}</text>`;
-return s+`<text x="560" y="590" text-anchor="middle" font-size="340" style="filter:drop-shadow(0 34px 30px rgba(0,0,0,.55))">${a.e}</text><rect width="960" height="1080" fill="url(#vg)"/></svg>`}
-
-/* Videolu reklam: canvas animasyonu */
-const cv=document.createElement('canvas');cv.width=640;cv.height=720;const cx=cv.getContext('2d');
-function draw(t){const a=ad,h=a.h,m=Math.floor(a.i/2)%4,W=960,H=1080,s=t/1000;cx.setTransform(2/3,0,0,2/3,0,0);
-const g=cx.createLinearGradient(0,0,W,H);g.addColorStop(0,`hsl(${h} 70% 30%)`);g.addColorStop(1,`hsl(${h+40} 75% 14%)`);cx.fillStyle=g;cx.fillRect(0,0,W,H);
-if(m===0){for(let k=0;k<6;k++){cx.beginPath();cx.moveTo(0,H);for(let x=0;x<=W;x+=12)cx.lineTo(x,640+k*70+Math.sin(x/110+s*1.6+k)*46);cx.lineTo(W,H);cx.fillStyle=`hsla(${h+k*12} 85% ${55-k*5}% / .30)`;cx.fill()}}
-else if(m===1){for(let k=1;k<=5;k++){const R=90+k*74;cx.strokeStyle=`hsla(${h+k*16} 90% 70% / .45)`;cx.lineWidth=3;cx.beginPath();cx.arc(560,500,R,0,7);cx.stroke();const an=s*(.5+k*.18)*(k%2?1:-1);cx.fillStyle=`hsl(${h+k*16} 95% 72%)`;cx.beginPath();cx.arc(560+Math.cos(an)*R,500+Math.sin(an)*R,12+k*2,0,7);cx.fill()}}
-else if(m===2){for(let k=0;k<34;k++){const sp=40+(k*29%70),x=(k*97%900)+40+Math.sin(s+k)*24,y=H+80-((s*sp+k*131)%(H+160)),r=10+(k*13%34);cx.fillStyle=`hsla(${h+k*6} 90% 72% / .30)`;cx.beginPath();cx.arc(x,y,r,0,7);cx.fill();cx.strokeStyle='rgba(255,255,255,.35)';cx.stroke()}}
-else{for(let x=0;x<=W;x+=60)for(let y=0;y<=H;y+=60){const d=Math.hypot(x-560,y-500),p=(Math.sin(d/60-s*3)+1)/2;cx.fillStyle=`hsla(${h+p*50} 90% 70% / ${.15+p*.6})`;cx.beginPath();cx.arc(x,y,4+p*14,0,7);cx.fill()}}
-for(let k=0;k<10;k++){cx.fillStyle=`hsla(${h+k*10} 90% 75% / .14)`;cx.beginPath();cx.arc((k*173+s*10*(k%3+1))%W,(k*107)%H,30+k*6,0,7);cx.fill()}
-cx.save();cx.shadowColor='rgba(0,0,0,.55)';cx.shadowBlur=50;cx.shadowOffsetY=34;cx.translate(560,520);const p=1+Math.sin(s*2.4)*.06;cx.scale(p,p);cx.font='320px serif';cx.textAlign='center';cx.textBaseline='middle';cx.fillText(a.e,0,0);cx.restore();const vg=cx.createRadialGradient(560,500,300,560,500,900);vg.addColorStop(0,'rgba(0,0,0,0)');vg.addColorStop(1,'rgba(0,0,0,.6)');cx.fillStyle=vg;cx.fillRect(0,0,W,H);
-const sec=Math.min(7,Math.floor(s));$('tc').textContent=`00:0${sec} / 00:07`}
-let last=0;function loop(ts){if(ad&&ad.video&&!paused&&ts-last>=33){last=ts;draw(ts-t0)}requestAnimationFrame(loop)}
-
-/* Gerçek medya: media/<marka>.mp4 veya .jpg ile logos/<marka>.png varsa kullanılır, yoksa üretilen görsel gösterilir */
-function mount(a,v){const s=slug(a.b),st='position:absolute;inset:0;width:100%;height:100%;object-fit:cover';
-if(a.video)v.appendChild(cv);else v.innerHTML=scene(a);
-const done=()=>{const b=$('bd');if(b)b.style.display='none'};
-const vd=document.createElement('video');vd.muted=vd.loop=vd.playsInline=vd.autoplay=true;vd.style.cssText=st;
-vd.addEventListener('loadeddata',()=>{if(ad!==a)return;v.replaceChildren(vd);vd.play().catch(()=>{});done()});vd.src='media/'+s+'.mp4';
-const im=new Image();im.style.cssText=st;im.onload=()=>{if(ad===a&&!vd.parentNode){v.replaceChildren(im);done()}};im.src='media/'+s+'.jpg'}
-function tryLogo(a){const im=new Image();im.onload=()=>{if(ad!==a)return;const l=document.querySelector('.logo');if(l){im.style.cssText='height:84px;width:auto;max-width:300px;object-fit:contain';l.replaceChildren(im);l.style.padding='14px 30px'}};im.src='logos/'+slug(a.b)+'.png'}
-/* Reklamı göster */
-function render(a){
-document.documentElement.style.setProperty('--h',a.h);
-content.innerHTML=`<div class="txt"><div class="chip">${a.c}</div><div class="logo">${logo(a)}<span>${a.b}</span></div><h1>${a.s}</h1><div class="offer">${a.o}</div><div class="sub">Güncel koşullar için markanın resmi kanallarına bakın</div></div><div class="vis" id="vis"></div>${a.video?'<div class="badge" id="bd"><i></i><span id="tc">00:00 / 00:07</span></div>':'<div class="badge" id="bd">Görsel</div>'}`;
-mount(a,$('vis'));tryLogo(a);
-}
-function go(n){cur=(n+N)%N;el=0;content.classList.add('out');setTimeout(()=>{ad=ADS[cur];t0=performance.now();render(ad);content.classList.remove('out')},350);$('cnt').textContent=`${cur+1} / ${N}`}
-
-/* Zamanlayıcı, saat, bant */
-setInterval(()=>{if(paused)return;el+=100;$('prog').style.width=Math.min(100,el/D*100)+'%';if(el>=D)go(cur+1)},100);
-function clock(){const d=new Date();$('clock').innerHTML=d.toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit',second:'2-digit'})+`<small>${d.toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric',weekday:'long'})}</small>`}
-setInterval(clock,1000);clock();
-const tk=$('tk');tk.innerHTML=[`<span class="ti"><b style="--c:355">29 Ekim</b><span>Cumhuriyet Bayramımız kutlu olsun</span></span>`].concat(ADS.map(a=>`<span class="ti"><b style="--c:${a.h}">${a.b}</b><span>${a.o}</span></span>`)).join('');tk.innerHTML+=tk.innerHTML;tk.style.setProperty('--d',(tk.offsetWidth/2/170)+'s');
-addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(cur+1);else if(e.key==='ArrowLeft')go(cur-1);else if(e.key===' '){paused=!paused;e.preventDefault()}else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}});
-document.addEventListener('dblclick',()=>document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen());
-addEventListener('click',e=>go(cur+(e.clientX<innerWidth/3?-1:1)));
-go(0);requestAnimationFrame(loop);
-</script>
-</body>
-</html>
+const DATA=`Türk Hava Yolları|Kasım'da gökyüzünde avantaj|Kış rotalarında indirimli biletler satışta|Havayolu|355|✈️
+Turkcell|Dijital hayat seninle büyüyor|Kasım'a özel paketler ve kampanyalar uygulamada|Telekom|48|📱
+Hyundai|Kasım kampanyalarını kaçırma|Kampanyalar 1-30 Kasım 2026 arasında geçerli|Otomotiv|215|🚗
+BİM|Her gün uygun fiyat|Kasım aktüel ürünleri reyonlarda|Market|2|🛒
+Garanti BBVA|
